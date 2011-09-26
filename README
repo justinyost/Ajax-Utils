@@ -1,1 +1,39 @@
-Ajaxivanich jQuery Plugin
+Ajax Utility jQuery Plugins
+
+	jquery.replace_location - replaces a location with data load via an AJAX request initiated by a click or change JavaScript action on a DOM element
+
+Background
+
+Requirements
+	Tested jQuery 1.6+
+
+Installation
+	Manual
+		Download this: https://github.com/jtyost2/Ajax-Utils/zipball/master
+		Unzip that download.
+		Copy the resulting folder to your JavaScript Directory
+		Rename the folder you just copied to @ajax-utils@
+
+	Git Submodule
+		In your JavaScript directory type:
+		
+		git submodule add git://github.com/jtyost2/Ajax-Utils.git ajax-utils
+		git submodule init
+		git submodule update
+
+	Git Clone
+		In your JavaScript directory type
+		
+		git clone git://github.com/jtyost2/Ajax-Utils.git ajax-utils
+
+Usage
+	Include a link to the jQuery Plugin in your HTML files
+	$(objectsToUsePluginOn).replace_location();
+
+Options
+	replaceLocation: Attribute to load the location to replace with data from the AJAX request, default is 'replaceLocation'
+	ajaxType: Type of AJAX request to send, default is 'POST'
+	
+ToDo
+	Test down to jQuery 1.4
+	Build Unit Tests
