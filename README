@@ -1,6 +1,6 @@
 Ajax Utility jQuery Plugins
 
-	jquery.replace_location - replaces a location with data load via an AJAX request initiated by a click or change JavaScript action on a DOM element
+	jquery.replace_location - replaces a location with data loaded via an AJAX request initiated by a click or change JavaScript action on a DOM element
 
 Background
 
