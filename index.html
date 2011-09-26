@@ -1,82 +1,155 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset='utf-8'>
+	<meta charset='utf-8'>
+	<title>jtyost2/Ajax-Utils @ GitHub</title>
+	
+	<style type="text/css">
+	body {
+		margin-top: 1.0em;
+		background-color: #4d2039;
+		font-family: Helvetica, Arial, FreeSans, san-serif;
+		color: #ffffff;
+	}
+	#container {
+		margin: 0 auto;
+		width: 700px;
+	}
+	h1 { font-size: 3.8em; color: #b2dfc6; margin-bottom: 3px; }
+	h1 .small { font-size: 0.4em; }
+	h1 a { text-decoration: none }
+	h2 { font-size: 1.5em; color: #b2dfc6; }
+	h3 { text-align: center; color: #b2dfc6; }
+	a { color: #b2dfc6; }
+	.description { font-size: 1.2em; margin-bottom: 30px; margin-top: 30px; font-style: italic;}
+	.download { float: right; }
+	pre { background: #000; color: #fff; padding: 15px;}
+	hr { border: 0; width: 80%; border-bottom: 1px solid #aaa}
+	.footer { text-align:center; padding-top:30px; font-style: italic; }
+	</style>
+	
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6/jquery.min.js"></script>
+	<script type="text/javascript" src="./jquery.replace_location.js"></script>
 
-  <title>jtyost2/Ajax-Utils @ GitHub</title>
-
-  <style type="text/css">
-    body {
-      margin-top: 1.0em;
-      background-color: #4d2039;
-      font-family: Helvetica, Arial, FreeSans, san-serif;
-      color: #ffffff;
-    }
-    #container {
-      margin: 0 auto;
-      width: 700px;
-    }
-    h1 { font-size: 3.8em; color: #b2dfc6; margin-bottom: 3px; }
-    h1 .small { font-size: 0.4em; }
-    h1 a { text-decoration: none }
-    h2 { font-size: 1.5em; color: #b2dfc6; }
-    h3 { text-align: center; color: #b2dfc6; }
-    a { color: #b2dfc6; }
-    .description { font-size: 1.2em; margin-bottom: 30px; margin-top: 30px; font-style: italic;}
-    .download { float: right; }
-    pre { background: #000; color: #fff; padding: 15px;}
-    hr { border: 0; width: 80%; border-bottom: 1px solid #aaa}
-    .footer { text-align:center; padding-top:30px; font-style: italic; }
-  </style>
+	<script type="text/javascript">
+		$(document).ready(function (){
+			$('.replace_location').replace_location({ajaxType: 'GET'});
+		});
+	</script>
 </head>
-
 <body>
-  <a href="http://github.com/jtyost2/Ajax-Utils"><img style="position: absolute; top: 0; right: 0; border: 0;" src="http://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Fork me on GitHub" /></a>
+	<a href="http://github.com/jtyost2/Ajax-Utils">
+		<img style="position: absolute; top: 0; right: 0; border: 0;" src="http://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Fork me on GitHub" />
+	</a>
+	
+	<div id="container">
+		<div class="download">
+			<a href="http://github.com/jtyost2/Ajax-Utils/zipball/master">
 
-  <div id="container">
+				<img border="0" width="90" src="http://github.com/images/modules/download/zip.png">
+			</a>
+			<a href="http://github.com/jtyost2/Ajax-Utils/tarball/master">
+				<img border="0" width="90" src="http://github.com/images/modules/download/tar.png">
+			</a>
+		</div>
+		
+		<h1>
+			<a href="http://github.com/jtyost2/Ajax-Utils">Ajax-Utils</a>
 
-    <div class="download">
-      <a href="http://github.com/jtyost2/Ajax-Utils/zipball/master">
-        <img border="0" width="90" src="http://github.com/images/modules/download/zip.png"></a>
-      <a href="http://github.com/jtyost2/Ajax-Utils/tarball/master">
-        <img border="0" width="90" src="http://github.com/images/modules/download/tar.png"></a>
-    </div>
+			<span class="small">by <a href="http://github.com/jtyost2">jtyost2</a></span>
+		</h1>
 
-    <h1><a href="http://github.com/jtyost2/Ajax-Utils">Ajax-Utils</a>
-      <span class="small">by <a href="http://github.com/jtyost2">jtyost2</a></span></h1>
+		<div class="description">
+		
+		</div>
 
-    <div class="description">
-      Taken from Yostivanich, it's an add on to perform some common ajax actions using jQuery.
-    </div>
+		<h2>Dependencies</h2>
+		<p>jQuery 1.6</p>
 
-    <h2>Dependencies</h2>
-<p>jQuery 1.6</p>
-<h2>Authors</h2>
-<p>Justin Yost (justin.yost@yostivanich.com)
-<br/>
-<br/>      </p>
-<h2>Contact</h2>
-<p>Justin Yost (jtyost2@gmail.com)
-<br/>      </p>
+		
+		<h2>Authors</h2>
+		<p>Justin Yost (justin.yost@yostivanich.com)</p>
+			
+		<h2>Download</h2>
+		<p>
+			You can download this project in either
+			<a href="http://github.com/jtyost2/Ajax-Utils/zipball/master">zip</a> or
+			<a href="http://github.com/jtyost2/Ajax-Utils/tarball/master">tar</a> formats.
+		</p>
 
+		<p>You can also clone the project with <a href="http://git-scm.com">Git</a>
+		by running:
+			<pre>$ git clone git://github.com/jtyost2/Ajax-Utils</pre>
+		</p>
+		
+		<h2>Demo of Repleace Location jQuery Plugin</h2>
+		
+		<h3>Replace Location with a Link</h3>
+		<p id="replaceThisPargraphButton">
 
-    <h2>Download</h2>
-    <p>
-      You can download this project in either
-      <a href="http://github.com/jtyost2/Ajax-Utils/zipball/master">zip</a> or
-      <a href="http://github.com/jtyost2/Ajax-Utils/tarball/master">tar</a> formats.
-    </p>
-    <p>You can also clone the project with <a href="http://git-scm.com">Git</a>
-      by running:
-      <pre>$ git clone git://github.com/jtyost2/Ajax-Utils</pre>
-    </p>
+			This pagraph will go away when you click the link.
+		</p>
+		
+		<a href="./sample_ajax.html" class="replace_location" replaceLocation="#replaceThisPargraphButton">Replace the above pargraph with data.</a>
+		
+		<h4>Code</h4>
+		<pre>
+&lt;p id=&quot;replaceThisPargraphButton&quot;&gt;
+This pagraph will go away when you click the link.
+&lt;/p&gt;
 
-    <div class="footer">
-      get the source code on GitHub : <a href="http://github.com/jtyost2/Ajax-Utils">jtyost2/Ajax-Utils</a>
-    </div>
+&lt;a
+	href=&quot;./sample_ajax.php&quot;
+	class=&quot;replace_location middle&quot;
+	replaceLocation=&quot;#replaceThisPargraphButton&quot;&gt;
+	Replace the above pargraph with data.
+&lt;/a&gt;
+		</pre>
 
-  </div>
+		
+		<h3>Replace Location with a Select Element</h3>
+		<p id="replaceThisPargraphSelect">
+		This pagraph will go away when you change the select.
+		</p>
+		
+		<form>
+			<select name="select" class="replace_location" href="./sample_ajax.html" replaceLocation="#replaceThisPargraphSelect">
+				<option value="first">First</option>
+				<option value="second">Second</option>
 
-  
+				<option value="third">Third</option>
+				<option value="fourth">Fourth</option>
+			</select>
+		</form>
+		
+		<h4>Code</h4>
+		<pre>
+&lt;p id=&quot;replaceThisPargraphSelect&quot;&gt;
+
+This pagraph will go away when you change the select.
+&lt;/p&gt;
+
+&lt;form&gt;
+	&lt;select
+		name=&quot;select&quot;
+		class=&quot;replace_location&quot;
+		href=&quot;./sample_ajax.php&quot;
+
+		replaceLocation=&quot;#replaceThisPargraphSelect&quot;&gt;
+		
+		&lt;option value=&quot;first&quot;&gt;First&lt;/option&gt;
+		&lt;option value=&quot;second&quot;&gt;Second&lt;/option&gt;
+		&lt;option value=&quot;third&quot;&gt;Third&lt;/option&gt;
+
+		&lt;option value=&quot;fourth&quot;&gt;Fourth&lt;/option&gt;
+	&lt;/select&gt;
+&lt;/form&gt;
+		</pre>
+
+		<div class="footer">
+			get the source code on GitHub : <a href="http://github.com/jtyost2/Ajax-Utils">jtyost2/Ajax-Utils</a>
+
+		</div>
+	</div>
 </body>
 </html>
