@@ -1,11 +1,11 @@
 Ajax Utility jQuery Plugins
-
+	
 	jquery.replace_location - replaces a location with data loaded via an AJAX request initiated by a click or change JavaScript action on a DOM element
 
 Background
-
+	
 Requirements
-	Tested jQuery 1.6+
+	Tested jQuery 1.4 through 1.7
 
 Installation
 	Manual
@@ -33,7 +33,7 @@ Usage
 Options
 	replaceLocation: Attribute to load the location to replace with data from the AJAX request, default is 'replaceLocation'
 	ajaxType: Type of AJAX request to send, default is 'POST'
+	replaceLocationURLAttr: Attribute to use as the url of the AJAX request, default is 'href'
 	
 ToDo
-	Test down to jQuery 1.4
 	Build Unit Tests
