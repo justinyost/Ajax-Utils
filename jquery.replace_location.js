@@ -1,4 +1,5 @@
 (function($) {
+"use strict";
 $.fn.replace_location = function(options) {
 	$.fn.replace_location.defaults = {
 		replaceLocation: 'replaceLocation',
@@ -12,7 +13,7 @@ $.fn.replace_location = function(options) {
 	$(this).live({
 		'change': function(event){
 			var formElement = $(this);
-			if(formElement.attr(opts.replaceLocationURLAttr) != null && formElement.attr(opts.replaceLocationURLAttr) != undefined){
+			if(formElement.attr(opts.replaceLocationURLAttr) !== null && formElement.attr(opts.replaceLocationURLAttr) !== undefined){
 				$.ajax({
 					url: formElement.attr(opts.replaceLocationURLAttr),
 					data: formElement.serialize(),
@@ -24,7 +25,7 @@ $.fn.replace_location = function(options) {
 		},
 		'submit': function(event){
 			var formElement = $(this);
-			if(formElement.attr(opts.replaceLocationURLFormAttr) != null && formElement.attr(opts.replaceLocationURLFormAttr) != undefined){
+			if(formElement.attr(opts.replaceLocationURLFormAttr) !== null && formElement.attr(opts.replaceLocationURLFormAttr) !== undefined){
 				$.ajax({
 					url: formElement.attr(opts.replaceLocationURLFormAttr),
 					data: formElement.serialize(),
@@ -35,11 +36,9 @@ $.fn.replace_location = function(options) {
 			}
 		},
 		'click': function(event){
-			if(event.target.nodeName === "SELECT" || event.target.nodeName === "OPTION"){
-				
-			} else {
+			if(event.target.nodeName !== "SELECT" || event.target.nodeName !== "OPTION"){
 				var formElement = $(this);
-				if(formElement.attr(opts.replaceLocationURLAttr) != null && formElement.attr(opts.replaceLocationURLAttr) != undefined){
+				if(formElement.attr(opts.replaceLocationURLAttr) !== null && formElement.attr(opts.replaceLocationURLAttr) !== undefined){
 					$.ajax({
 						url: formElement.attr(opts.replaceLocationURLAttr),
 						data: formElement.serialize(),
@@ -51,4 +50,4 @@ $.fn.replace_location = function(options) {
 			}
 		}
 	});
-}})(jQuery);
+};})(jQuery);
