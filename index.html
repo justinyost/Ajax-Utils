@@ -89,7 +89,7 @@
 			This paragraph will go away when you click the link.
 		</p>
 		
-		<a href="./sample_ajax.html" class="replace_location" replaceLocation="#replaceThisParagraphButton">Replace the above paragraph with data.</a>
+		<a href="./sample_ajax.html" class="replace_location" data-replace-location="#replaceThisParagraphButton">Replace the above paragraph with data.</a>
 		
 		<h4>Code</h4>
 		<pre>
@@ -105,7 +105,7 @@ This pagraph will go away when you click the link.
 &lt;a
 	href=&quot;./sample_ajax.php&quot;
 	class=&quot;replace_location middle&quot;
-	replaceLocation=&quot;#replaceThisParagraphButton&quot;&gt;
+	data-replace-location=&quot;#replaceThisParagraphButton&quot;&gt;
 	Replace the above paragraph with data.
 &lt;/a&gt;
 		</pre>
@@ -117,7 +117,7 @@ This pagraph will go away when you click the link.
 		</p>
 		
 		<form>
-			<select name="select" class="replace_location" href="./sample_ajax.html" replaceLocation="#replaceThisParagraphSelect">
+			<select name="select" class="replace_location" href="./sample_ajax.html" data-replace-location="#replaceThisParagraphSelect">
 				<option value="first">First</option>
 				<option value="second">Second</option>
 				<option value="third">Third</option>
@@ -142,8 +142,45 @@ This paragraph will go away when you change the select.
 		name=&quot;select&quot;
 		class=&quot;replace_location&quot;
 		href=&quot;./sample_ajax.php&quot;
-		replaceLocation=&quot;#replaceThisPargraphSelect&quot;&gt;
+		data-replace-location=&quot;#replaceThisPargraphSelect&quot;&gt;
 		
+		&lt;option value=&quot;first&quot;&gt;First&lt;/option&gt;
+		&lt;option value=&quot;second&quot;&gt;Second&lt;/option&gt;
+		&lt;option value=&quot;third&quot;&gt;Third&lt;/option&gt;
+		&lt;option value=&quot;fourth&quot;&gt;Fourth&lt;/option&gt;
+	&lt;/select&gt;
+&lt;/form&gt;
+		</pre>
+		
+		<h3>Replace Location with a Submit Event</h3>
+		<p id="replaceThisParagraphSubmit">
+		This paragraph will go away when you submit the form.
+		</p>
+		<form method="get" action="./sample_ajax.html" data-replace-location="#replaceThisParagraphSubmit" class="replace_location">
+			<input type="text"></input>
+			<select name="select">
+				<option value="first">First</option>
+				<option value="second">Second</option>
+				<option value="third">Third</option>
+				<option value="fourth">Fourth</option>
+			</select>
+			<input type="submit"/>
+		</form>
+		
+		<h4>Code</h4>
+		<pre>
+&lt;script type=&quot;text/javascript&quot;&gt;
+	$(document).ready(function (){
+		$('.replace_location').replace_location({ajaxType: 'GET'});
+	});
+&lt;/script&gt;
+&lt;p id=&quot;replaceThisParagraphSubmit&quot;&gt;
+This paragraph will go away when you submit the form.
+&lt;/p&gt;
+
+&lt;form method="get" action="./sample_ajax.html" data-replace-location="#replaceThisParagraphSubmit" class="replace_location&gt;
+	&lt;input type=&quot;text&quot;&gt;&lt;/input&gt;
+	&lt;select&gt;
 		&lt;option value=&quot;first&quot;&gt;First&lt;/option&gt;
 		&lt;option value=&quot;second&quot;&gt;Second&lt;/option&gt;
 		&lt;option value=&quot;third&quot;&gt;Third&lt;/option&gt;
